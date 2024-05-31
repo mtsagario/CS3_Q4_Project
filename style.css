@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: url(bg.svg) no-repeat center center;
+    background-size: cover;
+	width: auto;
+}
+
+.welcome-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.welcome-screen h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-screen p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-screen button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background: #585EFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome-screen button:hover {
+    background: #484ED6;
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 5px;
+    background: #293447;
+}
+
+.game-details {
+    color: #b8c6dc;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: #212837;
+}
+
+.play-board .food {
+    background: #EA3D8C;
+}
+
+.play-board .head {
+    background: #585EFF;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.controls i {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+}
